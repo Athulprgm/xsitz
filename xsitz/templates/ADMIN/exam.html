@@ -1,0 +1,99 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+</head>
+
+<body>
+    <div class="navbar navbar-secondary">
+        <div class="nav">
+            <div class="title">Exam Seater</div>
+            <ul>
+                <li><a class="nav-link " href="REPORT.html">Report</a></li>
+                <li><a class="nav-link" href="addclass.html">Add Class</a></li>
+                <li><a class="nav-link" href="manageclass.html">Manage Class</a></li>
+                <li><a class="nav-link active" href="exam.html">Add Exam</a></li>
+                <li><a class="nav-link " href="allocatestaff.html">Allocate Staff</a></li>
+
+                <li>
+                    <a href="" class="btn btn-sm btn-primary">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <form>
+        <div class="fill center-item ">
+            <div class="form-container ">
+                <div class="card">
+     <h1>Add Exam</h1>
+     <div class="form">
+
+                    <div class="list lines ">
+                        <div class="d-flex inline-input mb-1 ">
+              
+            
+                            <label for="DATE">DATE :</label>
+                            <input type="date" placeholder="DATE" class="form-control"><br>
+                            <label for="TIME">TIME :</label>
+                            <input type="time" placeholder="TIME" class="form-control">
+                        </div>
+                    </div>
+     </div>
+     
+                    
+                    <div class="list lines for mb-1 ">
+                        <div class="d-flex inline-input mb-1 center-item ">
+                            <div class="cent">
+                            <label for="examname">EXAM NAME:</label><br>
+                            <input type="text" class="form-control"><br>
+                            <label for="totalstudent">TOTAL STUDENT:</label><br>
+                            <input type="text" class="form-control"><br>
+                            <label for="BRANCH">CHOOCE A BRANCH</label><br>
+                            <select name="BRANCH" id="BRANCH" class="form-control">
+                                <option value="BSC">BSC</option>
+                                <option value="BCOM">BCOM</option>
+                                <option value="MSC">MSC</option>
+                                <option value="MCOM">MCOM</option>
+                            </select><br>
+                            <label for="SEMESTER">CHOOCE SEMESTER</label><br>
+                            <select name="SEMESTER" id="SEMESTER" class="form-control">
+                                <option value="FIRST">FIRST</option>
+                                <option value="SECOND">SECOND</option>
+                                <option value="THIRD">THIRD</option>
+                                <option value="FOURTH">FOURTH</option>
+                                <option value="FIFTH">FIFTH</option>
+                                <option value="SIXTH">SIXTH</option>
+                            </select><br>
+                            <label for="SUBJECT">CHOOCE SUBJECT</label><br>
+                            <select name="SUBJECT" id="SUBJECT" class="form-control">
+                                <option value="CS">CS</option>
+                                <option value="CA">CA</option>
+                                <option value="CO">CO</option>
+                                <option value="FINANCE">FINANCE</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </div>
+        
+    </form>
+
+    <div class="butt2">
+        <button>SUBMIT</button>
+    </div>
+    
+</body>
+
+
+</html>

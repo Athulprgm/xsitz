@@ -1,0 +1,42 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+</head>
+
+<body>
+    <div class="navbar navbar-secondary">
+        <div class="nav">
+            <div class="title">Exam Seater</div>
+            <ul>
+                <li><a class="nav-link active" href="REPORT.html">Report</a></li>
+                <li><a class="nav-link" href="addclass.html">Add Class</a></li>
+                <li><a class="nav-link" href="manageclass.html">Manage Class</a></li>
+
+                <li>
+                    <a href="" class="btn btn-sm btn-primary">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="center-item wh-100 mt-5">
+        <div class="form-container">
+          <div class="card">
+            <h1>Report</h1>
+            <div class="form">
+              <textarea type="text" rows="5" placeholder="Name of report" class="form-control mb-1"></textarea>
+              <input type="file" class="mb-1 form-control">
+              <button class="btn btn-primary btn-block mb-05">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
