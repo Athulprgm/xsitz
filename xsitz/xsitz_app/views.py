@@ -7,11 +7,11 @@ class registerpage(View):
         return render(request,'register.html')
 class indexpage(View):
     def get(self,request):
-        return render(request,'index.html')
+        return render(request,'login.html')
 # //////////////////////////////////////////////// ADMIN ///////////////////////////////
 class exam(View):
     def get(self,request):
-        return render(request,'ADMIN/exam.html')
+        return render(request,'ADMIN/addexam.html')
 class addclass(View):
     def get(self,request):
         return render(request,'ADMIN/addclass.html')

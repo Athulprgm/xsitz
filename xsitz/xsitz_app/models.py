@@ -6,7 +6,7 @@ class LoginTable(models.Model):
     password = models.CharField(max_length=30, null=True, blank=True)
     Type = models.CharField(max_length=30, null=True, blank=True)
 
-class StudentTable(models.model):
+class StudentTable(models.Model):
     LOGIN=models.ForeignKey(LoginTable, on_delete=models.CASCADE)
     name = models.CharField(max_length=30, null=True, blank=True)
     age = models.IntegerField(null=True, blank=True)
@@ -16,7 +16,7 @@ class StudentTable(models.model):
     email = models.EmailField(max_length=100, null=True, blank=True)
 
 
-class TeacherTable(models.modej):
+class TeacherTable(models.Model):
     LOGIN=models.ForeignKey(LoginTable, on_delete=models.CASCADE)
     name = models.CharField(max_length=30, null=True, blank=True)
     age = models.IntegerField(null=True, blank=True)
@@ -30,7 +30,7 @@ class ClassTable(models.Model):
     total_bench = models.IntegerField( null=True, blank=True)
     capacity = models.IntegerField( null=True, blank=True)
 
-class SeatTable(models.model):
+class SeatTable(models.Model):
     seat_no = models.IntegerField( null=True, blank=True)
     CLASS=models.ForeignKey(ClassTable,on_delete=models.CASCADE)
 

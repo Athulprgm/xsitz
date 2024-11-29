@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+
+
+</head>
+
+<body>
+<div class="navbar navbar-secondary">
+        <div class="nav">
+            <div class="title">Exam Seater</div>
+            <ul>
+                <li><a class="nav-link " href="REPORT.html">Report</a></li>
+                <li><a class="nav-link" href="addclass.html">Add Class</a></li>
+                <li><a class="nav-link" href="manageclass.html">Manage Class</a></li>
+                <li><a class="nav-link active" href="exam.html">Add Exam</a></li>
+                <li><a class="nav-link " href="allocatestaff.html">Allocate Staff</a></li>
+
+                <li>
+                    <a href="" class="btn btn-sm btn-primary">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<div
+{% block body %}
+{% endblock %}
+></div>
+
+
+</body>
+</html>
