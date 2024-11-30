@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
     <title>ADD CLASSROOMs</title>
     
 </head>
@@ -32,13 +32,37 @@
                     </div>
                 </div>
 
-                <div class="d-flex justify-between">
-                    <button class="btn btn-secondary">Add More</button>
-                    <button class="btn btn-primary">Submit</button>
-                </div>
+                      </div>
+              <div class="newdiv"></div>
+              <button type="button" class="add" id="add">add more classrooms</button>
+
             </div>
-        </div>
+            <input type="submit" value="submit" class="allocate">
+        </form>
+        <!-- ends -->
+    </div>
+    </div>
+           <script src="#"></script>
+     <script>
+function addNewRow() {
+    const container = document.querySelector('.divrow'); // Select the container for existing rows
+    const newFilterInput = document.createElement('div'); // Create a new filter input div
+    newFilterInput.classList.add('filter-input');
+    newFilterInput.innerHTML = `
+               <div class="classroom">
+                    <label for="class_name">Class name:<input type="text" id="hallno" name="hallno"  class="inputs"></label>
+                    <label for="seat_capacity">Seating Capacity:<input type="number" id="capacity" name="capacity"   class="inputs"></label>
+                    <label for="Columns">Columns:<input type="number" id="Columns" name="columns"   class="inputs"></label>
+               </div>
+        `;
+    container.appendChild(newFilterInput);
+    container.appendChild(document.querySelector('.add'));
+    newFilterInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+document.querySelector('.add').addEventListener('click', addNewRow);
+
+</script>
     
     
-</body>
-</html>
+
